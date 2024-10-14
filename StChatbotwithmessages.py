@@ -7,7 +7,7 @@ import streamlit as st
 from streamlit_chat import message
 
 import os
-os.environ["GOOGLE_API_KEY"]="AIzaSyCwEu9Y1gacKRgEp2R_C_uUFsg7x6L4GLM"
+os.environ["GOOGLE_API_KEY"]=st.secrets["GOOGLE_API_KEY"]
 
 google_flash_model=ChatGoogleGenerativeAI(model="gemini-1.5-flash-002")
 
